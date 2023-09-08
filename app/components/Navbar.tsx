@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
@@ -375,3 +376,138 @@ export default Navbar;
 // }
 
 // export default Navbar
+=======
+'use client'
+import React, { useState, useRef } from 'react'
+import styles from './Navbar.module.scss'
+import MobileToggle from './MobileToggle'
+import Image from 'next/image'
+import mypic from '../assets/images/logo.svg'
+import Link from 'next/link'
+import Submenu from './Submenu'
+import Page from '../support/support'
+import Kontakt from '../kontakt/kontakt'
+
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
+  const ref = useRef()
+
+  return (
+    <nav className={`${styles.navbar} ${isOpen ? styles.open : ''}`}>
+    <div className={styles.navmobile}>
+      <div className={styles.logo}>
+        <Link href={'/'}>
+          <Image src={mypic} alt="Logo" />
+        </Link>
+      </div>
+      <MobileToggle onClick={toggleMenu} isOpen={isOpen} /></div>
+      <div className={styles.doublenav}>
+        {' '}
+        <ul className={styles.navList1}>
+          <li>
+            {' '}
+            <Link href="/reasons"> Hvorfor Webmed</Link>
+          </li>
+          <li>
+            {' '}
+            <Link href="/nyheter"> Nyheter </Link>
+          </li>
+          <li>
+            <Link
+              href={{
+                pathname: '/omoss',
+              }}
+            >
+              Om oss
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={{
+                pathname: '/smartkort',
+              }}
+            >
+              Smartkort
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={{
+                pathname: '/jobb',
+              }}
+            >
+              Ledige stillinger
+            </Link>
+          </li>
+        </ul>
+        <ul className={styles.navList}>
+          <Submenu
+            title="Fastlege"
+            items={[
+              {
+                name: 'omrade/moduler/funksjonaliteter',
+                path: '/products/fastlege',
+              },
+              { name: 'samleside/demo', path: '/products/fastlege/demos' },
+              {
+                name: 'Teknologi og Systemkrav',
+                path: '/products/fastlege/systemkrav',
+              },
+              { name: 'Pris og Info', path: '/products/fastlege/priser' },
+            ]}
+          />
+
+          <Submenu
+            title="Specialist"
+            items={[
+              {
+                name: 'omrade/moduler/funksjonaliteter',
+                path: '/products/specialist',
+              },
+              { name: 'samleside/demo', path: '/products/specialist/demos' },
+              {
+                name: 'Teknologi og Systemkrav',
+                path: '/products/specialist/systemkrav',
+              },
+              { name: 'Pris og Info', path: '/products/specialist/priser' },
+            ]}
+          />
+
+          <Submenu
+            title="Legevakt"
+            items={[
+              {
+                name: 'omrade/moduler/funksjonaliteter',
+                path: '/products/legevakt',
+              },
+              { name: 'samleside/demo', path: '/products/legevakt/demos' },
+              {
+                name: 'Teknologi og Systemkrav',
+                path: '/products/legevakt/systemkrav',
+              },
+              { name: 'Pris og Info', path: '/products/legevakt/priser' },
+            ]}
+          />
+
+          <li>
+            {' '}
+            <Link href="/tilleggstjenester"> Tilleggstjenester </Link>
+          </li>
+          <li>
+            {' '}
+            <Link href="/hvordan-blir-kunde"> Hvordan bil kunde </Link>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  )
+}
+
+export default Navbar
+>>>>>>> abb4ce1 (New landing page)

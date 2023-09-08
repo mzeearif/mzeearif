@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import Link from 'next/link'
 import ClickAwayListener from '@mui/material/ClickAwayListener'
+<<<<<<< HEAD
 import styles from './Navbar.module.scss' // Adjust the import path
 
 interface SubmenuProps {
@@ -9,6 +10,21 @@ interface SubmenuProps {
 }
 
 const Submenu: React.FC<SubmenuProps> = ({ menuTitle, submenuItems }) => {
+=======
+import styles from './Submenu.module.scss' // Adjust the import path
+
+interface SubmenuItem {
+  name: string
+  path: string
+}
+
+interface SubmenuProps {
+  title: string
+  items: SubmenuItem[]
+}
+
+const Submenu: React.FC<SubmenuProps> = ({ title, items }) => {
+>>>>>>> abb4ce1 (New landing page)
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
 
   const toggleSubMenu = () => {
@@ -29,6 +45,7 @@ const Submenu: React.FC<SubmenuProps> = ({ menuTitle, submenuItems }) => {
           isSubMenuOpen ? styles.subMenuOpen : ''
         }`}
       >
+<<<<<<< HEAD
         {menuTitle}
         <ul className={styles.subMenu}>
           {isSubMenuOpen &&
@@ -38,9 +55,34 @@ const Submenu: React.FC<SubmenuProps> = ({ menuTitle, submenuItems }) => {
               </li>
             ))}
         </ul>
+=======
+        <div className={styles.title}>
+          {title}
+          <img
+            src="/dropdown.svg"
+            alt="dropDowm"
+            className={isSubMenuOpen ? styles.rotateImage : ''}
+          />
+        </div>
+        {isSubMenuOpen && (
+          <ul className={styles.subMenu}>
+            <span>{title}</span>
+            <div>Utforsk vårt innhold innenfor {title} →</div>
+            {items.map((item, index) => (
+              <li key={index} className={styles.subList}>
+                <Link href={item.path}>{item.name}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+>>>>>>> abb4ce1 (New landing page)
       </li>
     </ClickAwayListener>
   )
 }
 
+<<<<<<< HEAD
 export default Submenu
+=======
+export default Submenu
+>>>>>>> abb4ce1 (New landing page)

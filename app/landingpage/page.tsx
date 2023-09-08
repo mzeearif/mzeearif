@@ -1,5 +1,13 @@
 import { ST } from 'next/dist/shared/lib/utils';
 import Styles from './landingpage.module.scss';
+<<<<<<< HEAD
+=======
+import Image from 'next/image'
+import mypic from '../assets/images/svgForLanding.svg';
+import doc from '../assets/images/images.jpeg';
+import women from '../assets/images/download.jpeg'
+
+>>>>>>> abb4ce1 (New landing page)
 
 import * as React from 'react';
 
@@ -15,12 +23,20 @@ const Page = () => {
                 </div>
                 <div className={Styles.landingright}>
                 <div className={Styles.landingrightimage}>
+<<<<<<< HEAD
         <img src="/path-to-your-image.jpg" alt="landingright" />
+=======
+                <Image src={doc}  alt="SVG" />
+>>>>>>> abb4ce1 (New landing page)
       </div>
         </div>
             </div>
             <div className={Styles.category}>
+<<<<<<< HEAD
                 <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere perspiciatis cum ex<br/> dolorum deserunt dolorem eum ratione.</h2>
+=======
+                <h2>Hvofor velge EPJ fra WebMad -none unlike grunner.</h2>
+>>>>>>> abb4ce1 (New landing page)
                 <div className={Styles.categoryimage}>
                     <div className={Styles.text}><div className={Styles.image}>image1</div>
                         <h4>Fastleger</h4>
@@ -51,39 +67,66 @@ const Page = () => {
             </div>
         </div>
         <div className={Styles.services}>
+<<<<<<< HEAD
                 <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere perspiciatis cum ex<br/> dolorum deserunt dolorem eum ratione.</h2>
                 <div className={Styles.servicesdata}>
                     <div className={Styles.servicetext}>
                         <div className={Styles.image}><h1>SVG 1</h1></div>
+=======
+                <h2>Hvofor velge EPJ fra WebMad -none unlike grunner</h2>
+                <div className={Styles.servicesdata}>
+                    <div className={Styles.servicetext}>
+                        <div className={Styles.image}><Image src={mypic}  alt="SVG" /></div>
+>>>>>>> abb4ce1 (New landing page)
                         <h4>Dashbord</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio non, rerum qui libero, aut ut dolorem saepe ea rem .</p>
                         
                     </div>
                     <div className={Styles.servicetext}>
+<<<<<<< HEAD
                         <div className={Styles.image}><h1>SVG 2</h1></div>
+=======
+                        <div className={Styles.image}><Image src={mypic}  alt="SVG" /></div>
+>>>>>>> abb4ce1 (New landing page)
                     <h4>Pasientvisning</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio non, rerum qui libero, aut ut dolorem saepe ea rem .</p>
                         </div>
                     <div className={Styles.servicetext}>
+<<<<<<< HEAD
                         <div className={Styles.image}><h1>SVG 3</h1></div>
+=======
+                        <div className={Styles.image}><Image src={mypic}  alt="SVG" /></div>
+>>>>>>> abb4ce1 (New landing page)
                     <h4>Lab og rapporter</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio non, rerum qui libero, aut ut dolorem saepe ea rem .</p>
                         </div>
                 </div>
                 <div className={Styles.servicesdata}>
                     <div className={Styles.servicetext}>
+<<<<<<< HEAD
                         <div className={Styles.image}><h1>SVG 4</h1></div>
+=======
+                        <div className={Styles.image}><Image src={mypic}  alt="SVG" /></div>
+>>>>>>> abb4ce1 (New landing page)
                         <h4>Dashbord</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio non, rerum qui libero, aut ut dolorem saepe ea rem .</p>
                         
                     </div>
                     <div className={Styles.servicetext}>
+<<<<<<< HEAD
                         <div className={Styles.image}><h1>SVG 5</h1></div>
+=======
+                        <div className={Styles.image}><Image src={mypic}  alt="SVG" /></div>
+>>>>>>> abb4ce1 (New landing page)
                     <h4>Pasientvisning</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio non, rerum qui libero, aut ut dolorem saepe ea rem .</p>
                         </div>
                     <div className={Styles.servicetext}>
+<<<<<<< HEAD
                         <div className={Styles.image}><h1>SVG 6</h1></div>
+=======
+                        <div className={Styles.image}><Image src={mypic}  alt="SVG" /></div>
+>>>>>>> abb4ce1 (New landing page)
                     <h4>Lab og rapporter</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio non, rerum qui libero, aut ut dolorem saepe ea rem .</p>
                         </div>
@@ -114,7 +157,13 @@ const Page = () => {
             </div>
             <div className={Styles.blog5}>
                 <div className={Styles.blog5data}>
+<<<<<<< HEAD
                     <div className={Styles.blog5image}></div>
+=======
+                    <div className={Styles.blog5image}>
+                    <Image src={women}  alt="women" />
+                    </div>
+>>>>>>> abb4ce1 (New landing page)
                 {/* <div className={Styles.blog5text1}>
                 </div> */}
                 <div className={Styles.blog5text2}>

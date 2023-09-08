@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar1 {
   display: flex;
   justify-content: space-between;
@@ -158,3 +159,152 @@
     justify-content: space-between;
   }
     
+=======
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 100px 15px 100px;
+  transition: max-height 0.3s ease-in-out;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    padding: 14px 40px 15px 40px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 14px 20px 15px 20px;
+  }
+
+  &.open {
+    max-height: 1150px;
+  }
+}
+
+.logo img {}
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: 1100px) {
+    gap: unset;
+  }
+
+  li {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+
+    a {
+      text-decoration: none;
+      color: #475467;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    display: block;
+    // flex-direction: column;
+    // align-items: flex-start;
+    max-height: 1100px;
+    overflow: hidden;
+  }
+  .navmobile{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .doublenav {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+    li {
+      border-bottom: 1px solid #475467;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 25px 12px;
+    }
+
+    &.open {
+      display: flex;
+    }
+  }
+}
+
+.navList1 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  gap: 25px;
+
+  @media (max-width: 1100px) {
+    gap: unset;
+  }
+
+  li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    a {
+      text-decoration: none;
+      color: #475467;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 70px;
+    overflow: hidden;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .navList1 {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: -17px;
+
+    li {
+      border-bottom: 1px solid #475467;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 25px 12px;
+    }
+
+    &.open {
+      display: flex;
+    }
+  }
+}
+>>>>>>> abb4ce1 (New landing page)

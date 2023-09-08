@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer{
     background-color: darkblue;
     color: white;
@@ -130,3 +131,217 @@
   }
 }
   
+=======
+.footer {
+  background-color: darkblue;
+  color: white;
+  padding: 14px 100px 15px 100px;
+
+  padding: 14px 100px 15px 100px;
+
+  @media (max-width: 900px) {
+    padding: 14px 40px 15px 40px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 14px 20px 15px 20px;
+  }
+
+  margin-top: 40px;
+}
+
+.footeritems {
+  margin-top: 30px;
+  background-color: darkblue;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h5 {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.agree {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footerItem {
+  flex: 1;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+}
+
+.div1 {
+  width: 20%;
+  padding: 0px 20px 0px 0px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.div1 .footerItem p {
+  padding: 5px 0px 5px 0;
+}
+
+.div2 {
+  width: 20%;
+  padding: 0px 20px 0px 0px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.div2 .footerItem p {
+  padding: 5px 0px 5px 0;
+}
+
+.footerItem2 {
+  flex: 1;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+.footerItem2 h3 {
+  padding: 0px 20px 10px 0px;
+}
+
+.footerItem3 {
+  flex: 1;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+.footerItem3 h3 {
+  padding: 0px 20px 10px 0px;
+}
+
+.footerItem4 {
+  flex: 1;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+.footerItem4 h3 {
+  padding: 0px 20px 20px 0px;
+}
+
+.inputText {
+  width: 90%;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+.inputCheckbox {
+  margin-right: 10px;
+  width: 7%;
+}
+
+.button {
+  background-color: white;
+  color: darkblue;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.footerlogo {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footerlogo .icon{
+  font-size: 6px;
+  width: 40px;
+  padding: 6px;
+}
+.footerlogo p{
+  line-height: 41px;
+}
+.socialIcons {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.footerlogo2 {
+  margin-top: 30px;
+@media (min-width: 768px) {
+  display: none;
+}
+.mobileview {
+  display: flex;
+  justify-content: space-between;
+.icon{
+  font-size: 6px;
+  width: 40px;
+  padding: 6px;
+}
+p{
+  margin: 10px 0 0 0;
+}
+} 
+.logo { 
+  img{
+  width: 60px;
+}
+p{
+  line-height: 40px;
+}
+
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+
+}
+
+
+
+>>>>>>> abb4ce1 (New landing page)
