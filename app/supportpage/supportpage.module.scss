@@ -1,0 +1,178 @@
+.main{
+    padding: 20px;
+    .support{
+        display: flex;
+        justify-content: space-between;
+        .image {
+            width: 45%;
+            img{
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 400px;
+        }}
+        .text{
+            width: 50%;
+        }
+        @media (max-width: 1100px) {
+              display: block;
+              .image {
+                width: 100%;
+                img{
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                width: 100%;
+                height: 400px;
+            }}
+            .text{
+                width: 100%;
+            }
+          }
+    }
+    .blog2{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0px 40px  0;
+        .blogdata{
+            background-color: darkblue;
+            color: #fff;
+            border-radius: 8px;
+            padding: 40px 80px 40px 80px;
+            text-align: center;
+        }
+        @media (max-width: 1100px) {
+            display: block;
+            .blogdata {
+                padding: 40px 80px 40px 80px;
+                margin: 20px 0 0 0;
+          }
+        }
+    }
+    .blog3{
+        h1{
+            text-align: center;
+            margin: 40px 0 60px 0;
+        }
+        .blog3main{
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 80px 150px 0px 150px;
+            @media (max-width: 1100px) {
+                padding: 0;
+                
+            }
+            .blog3content{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                margin-bottom: 60px;
+                h3,h5,p{
+                    padding: 10px 0px 0px 0;
+                    @media (max-width: 1100px) {
+                        padding: 10px 0px 0px 0;
+                        
+                    }
+                }
+                .blogdata .image img{
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    @media (max-width: 1100px) {
+                        width: 100%;
+                        margin-top: 20px;
+                        
+                    }
+                    
+                }
+                @media (max-width: 1100px) {
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        @media (max-width: 1100px) {
+            display: block;
+            
+        }
+        .contactform{
+            .form{
+                .input1,.input2{
+                    padding-top: 20px;
+                    .input{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        div{
+                            width: 48%;
+                            input{
+                                width: 100%;
+                                padding: 15px;
+                                border-radius: 8px;
+                                border: 1px solid #ccc;
+                            }
+                        }
+                    }
+                }
+                .input3{
+                    padding: 20px 0px 0 0;
+                    .input{
+                            margin-top: 20px;
+                            margin-bottom: 20px;                          
+                        textarea{
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 8px;
+                        border: 1px solid #ccc;
+                        padding: 20px;
+                    }
+                    }
+                }
+                .input4 .input {
+                    margin-top: 20px;   
+                    select{
+                    width: 100%;
+                    border-radius: 8px;
+                        border: 1px solid #ccc;
+                        padding: 20px;
+                }}
+                .input5 {
+                    margin: 20px 0 20px 0;
+                    .input{
+                    display: flex;
+                    margin: 20px 0 20px 0;
+                    line-height: 43px;
+                }
+                p span{
+                    color: darkblue;
+                }
+            }
+                .input div{
+                    width: 10%;
+                    input{
+                        width: 100%;
+                        height: 48px;
+                    }
+                }
+                button {
+                    border: 1px solid #ccc;
+                    padding: 16px;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .emailform{
+            padding: 40px 210px 78px 50px;
+            background-color: #fd8d7b;
+            border-radius: 8px;
+            color: #fff;
+            h3,p{
+                padding-top: 40px;
+            }
+        }
+    }
+
+}
